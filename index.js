@@ -18,6 +18,7 @@ function hamburger() {
     let hambox = document.querySelector('.hambox');
 
     hambox.addEventListener('click', () => {
+        document.querySelector('.header').classList.toggle('ham-open');
         document.querySelector('.ham').classList.toggle('cross');
         document.querySelector('.list').classList.toggle('ham-menu');
     })
