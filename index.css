@@ -26,6 +26,9 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
 }
+.header.ham-open {
+    background: black !important;
+}
 
 .logo {
     height: 80px;
