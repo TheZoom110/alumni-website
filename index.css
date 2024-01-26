@@ -12,6 +12,16 @@ body {
     background: #BCBCBC;
 }
 
+body::-webkit-scrollbar {
+    background-color: #888;
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #7c0101; /* Set the color of the thumb */
+    border-radius: 6px; /* Set the border-radius of the thumb */
+  }
+
 .header {
     z-index: 10;
     position: fixed;
@@ -216,6 +226,7 @@ body {
 .cgec form {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
     width: 60%;
     padding: 1rem;
     align-items: center;
@@ -224,21 +235,25 @@ body {
     background: var(--WHITE, #FFFCFC);
     box-shadow: 10px 19px 18.6px 0px rgba(0, 0, 0, 0.25);
 }
-.cgec input[type=search]{
+
+.cgec input[type=search] {
     border: none;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
 }
-.cgec input[type=search]:focus{
+
+.cgec input[type=search]:focus {
     outline: none;
     border: none;
 }
-.cgec  label{
+
+.cgec label {
     background-color: #D72626;
     border-radius: 50%;
 }
-.cgec i{
+
+.cgec i {
     color: #FFF;
     padding: 1rem;
 }
