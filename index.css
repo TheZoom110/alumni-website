@@ -49,12 +49,14 @@ body {
     gap: 15px;
 }
 
-.item a{
+.nav-item a{
     color: white;
     text-decoration: none;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 1.5rem;
 }
 
-.item a:hover{
+.nav-item a:hover{
     text-decoration: underline;
 }
 
