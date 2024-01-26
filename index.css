@@ -293,3 +293,43 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
     }
 }
+
+.footer {
+    height: 40vmin;
+    width: 100vw;
+    max-width: 100%;
+    clip-path: polygon(0 0, 50% 25%, 100% 0, 100% 100%, 0% 100%);
+    background: black;
+    color: white;
+}
+
+.foot-left {
+    position: relative;
+    width: 35%;
+    top: 30%;
+    left: 10%;
+    float: left;
+}
+#address {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 2rem;
+}
+#harinchawra {
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+.foot-right {
+    position: relative;
+    width: 35%;
+    top: 30%;
+    right: 10%;
+    float: right;
+    text-align: right;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
