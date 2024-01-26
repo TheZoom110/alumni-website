@@ -477,7 +477,8 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         margin: 0;
     }
-    .cgec form{
+
+    .cgec form {
         width: 90%;
         padding: 0.5rem 1rem;
     }
@@ -506,6 +507,7 @@ body::-webkit-scrollbar-thumb {
     .cgec {
         width: 80%;
     }
+
     .middle-bottom {
         display: flex;
         flex-direction: column;
@@ -513,27 +515,34 @@ body::-webkit-scrollbar-thumb {
         gap: 2rem;
         padding: 2rem 0;
     }
-    .middle-bottom>.box{
+
+    .middle-bottom>.box {
         width: 60%;
     }
-    .footer{
-        height: 80vh;
+
+    .footer {
+        height: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        justify-content: center;
+        justify-content: flex-end;
+        padding-bottom: 3rem;
+        clip-path: polygon(0 0, 50% 15%, 100% 0, 100% 100%, 0% 100%);
     }
+
     .foot-left {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .foot-right{
+
+    .foot-right {
         align-items: center;
     }
-    .icons{
+
+    .icons {
         width: 100%;
     }
 }
