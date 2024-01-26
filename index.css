@@ -298,6 +298,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 81.373%;
     /* 16.275px */
     text-transform: uppercase;
+    text-align: center;
 }
 
 .about h1 {
@@ -361,7 +362,7 @@ body::-webkit-scrollbar-thumb {
 
 .box a {
     color: #FFF;
-    font-family: "Saira SemiCondensed",sans-serif;
+    font-family: "Saira SemiCondensed", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -372,6 +373,75 @@ body::-webkit-scrollbar-thumb {
     background: #CD2121;
     padding: 0.5rem 1rem;
     text-decoration: none;
+}
+
+
+
+.footer {
+    height: 40vmin;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    clip-path: polygon(0 0, 50% 25%, 100% 0, 100% 100%, 0% 100%);
+    background: black;
+    color: white;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.foot-left {}
+
+#address {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 2rem;
+}
+
+#harinchawra {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.foot-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.icons img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+.social-icon {
+
+    width: 100%;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.foot-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.foot-links a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #FBF6F6;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -402,61 +472,68 @@ body::-webkit-scrollbar-thumb {
     }
 
     .cgec p {
-        padding-top: 10px;
-        font-size: 1.5rem;
+        padding: 1rem;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0;
+    }
+    .cgec form{
+        width: 90%;
+        padding: 0.5rem 1rem;
+    }
+
+    .main {
+        height: 70vh;
+    }
+
+    .middle-upper {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .alum {
+        top: 20%;
+        font-size: 3.5rem;
+
+    }
+
+    .alum p {
+        margin: 0;
+    }
+
+    .cgec {
+        width: 80%;
+    }
+    .middle-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+    .middle-bottom>.box{
+        width: 60%;
+    }
+    .footer{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .foot-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
-}
-
-.footer {
-    height: 40vmin;
-    width: 100vw;
-    max-width: 100%;
-    clip-path: polygon(0 0, 50% 25%, 100% 0, 100% 100%, 0% 100%);
-    background: black;
-    color: white;
-}
-.foot-left {
-    position: relative;
-    width: 35%;
-    top: 30%;
-    left: 10%;
-    float: left;
-}
-
-#address {
-    font-family: "Saira Stencil One", sans-serif;
-    font-size: 2rem;
-}
-
-#harinchawra {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2 rem;
-}
-
-.foot-right {
-    position: relative;
-    width: 35%;
-    top: 30%;
-    right: 10%;
-    float: right;
-    text-align: right;
-}
-
-.icons {
-    height: 30px;
-    display: flex;
-    justify-content: right;
-    gap: 5%;
-}
-
-.icons a {
-    text-decoration: none;
-}
-
-.social-icon {
-    height: 100%;
-    width: 100%;
-    -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
+    .foot-right{
+        align-items: center;
+    }
+    .icons{
+        width: 100%;
+    }
 }
